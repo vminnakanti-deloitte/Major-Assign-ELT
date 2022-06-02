@@ -1,0 +1,56 @@
+
+version: 2
+
+models:
+  - name: my_first_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: my_second_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+  - name: monthlynav
+    description: "calculating monthly performance"
+    columns:
+      - name: nav
+        description: "The primary key for this table"
+        tests:
+          - not_null
+  - name: minmax
+    description: "calculating min and max of nav"
+    columns:
+      - name: nav_date
+        description: "The primary key for this table"
+        tests:
+          - not_null
+  - name: plotperformance
+    description: "calculating monthly performance"
+    columns:
+      - name: code
+        description: "The primary key for this table"
+        tests:
+          - not_null
+  - name: listmutual
+    description: "calculating mutual fund performance"
+    columns:
+      - name: code
+        description: "The primary key for this table"
+        tests:
+          - not_null
+  - name: best
+    description: "calculating best performance"
+    columns:
+      - name: code
+        description: "The primary key for this table"
+        tests:
+          - not_null

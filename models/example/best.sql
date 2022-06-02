@@ -1,0 +1,2 @@
+select m.code,m.name from mutualfund as m join navhistory as n on m.code=n.code where (n.nav_date>'12/3/2018' and n.nav_date<'12/12/2018') and n.sale_price>n.repurchase_price order by n.sale_price 
+asc limit 1

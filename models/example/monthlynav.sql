@@ -1,0 +1,1 @@
+select avg(nav),avg(repurchase_price),avg(sale_price) from navhistory

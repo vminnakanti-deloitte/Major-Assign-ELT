@@ -1,0 +1,1 @@
+select max(nav),min(nav),nav_date from navhistory group by nav_date limit 1
